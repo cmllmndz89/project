@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="ow.css">
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font_awesome4_cheatsheet-master/css/font-awesome.min.css">
+  <style>
+    /* Custom CSS */
+    
+    .navbar {
+      margin-bottom: 20px;
+      background-color:#272727;
+    }
+    .header {
+      text-align: center;
+      padding: 100px 0;
+      position: absolute;
+    }
+    .img-fluid{
+        height: auto;
+        max-width:100%;
+        
+    }
+    .btn{
+        background-color: white;
+        color: black;
+        border-color: whitesmoke;
+    }
+    .btn:hover{
+        background-color: grey;
+        border-color: gray;
+        color: white;
+
+    }
+    .navbar-brand{
+        height: 50px;
+        width: 100px;
+        font-size: 30px;
+    }
+    .nav-item a{
+        color: aliceblue;
+    }
+    .nav-item a:hover {
+    background-color:gray;
+    border-bottom: 3px solid white;
+  }
+  .nav-item a.active  {
+    border-bottom: 3px solid white;
+  } 
+    body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("back.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.meow{
+    border-top: 2px solid black;
+  }
+.first {
+    text-align: justify;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.container{
+  border:none;
+  padding: 5px;
+  margin-top: 10%;
+
+}
+.img2 {
+  float: right;
+  align-items: center;
+  
+}
+.space{
+  margin-bottom: 15%;
+}
+.borderr{
+  border-bottom: 2px solid white;
+
+}
+.sec{
+  margin-top: 10%;
+  color: white;
+  text-align: center;
+}
+.third{
+  text-align: center;
+  color: white;
+  margin-bottom: 10%;
+}
+.fourth{
+  text-align: center;
+}
+.borderr2{
+  border-bottom: 2px solid black;
+
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 42%;
+  display: block;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+ 
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fifth{
+  text-align: center;
+}
+.borderr2{
+  margin-top: 2px;
+  border-bottom: 2px solid black;
+}
+.spacee{
+  margin-bottom: 20px;
+}
+.rev{
+  margin-bottom: 2px solid black;
+}
+.checked {
+  color: black;
+}
+.star{
+  text-align: center;
+  margin-top: 10px;
+}
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* para macenter yung pic*/
+.pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand pl-3 ml-auto" href="#">naeveis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Showcase</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+       <form class="form-inline ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">The Innovative Designs to Enhance the Human Experience</h1>
+      <button>Contact Us</button>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col">
+        <p class="first">Meet the Designer</p><br><br>
+        <h2 class="h2"><span class="meow">Mar</span>vin McKinney</h2>
+        <p class="first">To me, good design realises the potential of any space. 
+         It involves considered choices teamed with a sense of bravery.
+         As a designer, I have a strong understand important-each
+         element is essential to creating one cohesive look that is 
+         both resolved and Innovative.
+        </p>
+        <i style="font-size:26px" class="fa ml-3">&#xf09a;</i>
+        <i style="font-size:26px" class="fa ml-5">&#xf099;</i>
+        <i style="font-size:26px" class="fa ml-5">&#xf16d;</i>
+        <i style="font-size:26px" class="fa ml-5 space">&#xf0d3;</i>
+      </div>
+      <div class="col pic">
+        <img class="img2" src="yyyy.jpg" alt="picc"width="280" height="350">
+
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container" style="background-color: black;">
+    <div class="row">
+      
+      <div class="col sec">
+        <p class="spacee">Ex<span class="borderr">perienc</span>es</p>
+        <h3 class="mr-3">Trusted With a Variety of More Experiences</h3>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col third">
+        <h1>150+</h1>
+        <p>Rooms Projects</p>
+      </div>
+
+      <div class="col third">
+        <h1>17</h1>
+        <p>Design Award</p>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col third">
+        <h1>150+</h1>
+        <p>Rooms Projects</p>
+      </div>
+
+      <div class="col third">
+        <h1>7+</h1>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col fourth">
+        <p class="spacee"><span class="borderr2">Portfolio</span></p>
+        <h3 class="mr-3">Interior That Reflects Your Style</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="modern.jpg">
+        <img src="modern.jpg" alt="Cinque Terre" width="500" height="400">
+      </a>
+    </div>
+  </div>
+  
+  
+  <div class="responsive ">
+    <div class="gallery">
+      <a target="_blank" href="minimalist.jpeg">
+        <img src="minimalist.jpeg" alt="Forest" width="500" height="400">
+      </a>
+    </div>
+  </div>
+  
+  <div class="responsive ">
+    <div class="gallery">
+      <a target="_blank" href="luxury.jpg">
+        <img src="luxury.jpg" alt="Northern Lights" width="500" height="400">
+      </a>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="classy.jpg">
+        <img src="classy.jpg" alt="Mountains" width="500" height="400">
+      </a>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col fifth">
+        <p class="spacee">Rec<span class="borderr2">ent Pro</span>ject</p>
+        <h3 class="mr-3">Design for Now With The Awareness of Yesterday And Unknown Tommorrow</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="121661-living_rooms-interiors-interior_design.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="living.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="classy.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="luxury.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="minimalist.jpeg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="modern.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col fourth">
+      <p class="rev"><span class="borderr2">Review</span></p>
+      <h3 class="mr-3">Says Our Previous Clients</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="width: 400px; text-align: center;">
+    <p> "I am delighted with the Designs and the support I received from all
+       the teams involved in shaping my dream house. Each person who interacted
+        with me was very helpful and supportive."</p>
+        <p><b>- Chou Tzuyu</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col fourth" style="text-align: center;">
+      <p class="rev"><span class="borderr2">Newsletter</span></p>
+      <h3 class="mr-3">Subscribe to Our Newsletter</h3>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form action="/action_page.php">
+          <div class="container" style="background-color:white">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+            <label>
+              <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            </label>
+          </div>
+          <div class="container">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+      </div>
+    </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
